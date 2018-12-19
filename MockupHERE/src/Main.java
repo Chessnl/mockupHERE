@@ -4,15 +4,30 @@ public class Main {
 
 	long score = 0;
 	PriorityQueue<Event> events = new PriorityQueue<>(); 
-	List<Intersection> intersections = new ArrayList<>(); // acts as map
+	List<Intersection> intersections;
 	HashMap<Intersection, ArrayDeque<Resource>> activeResources = new HashMap<>();
 	ResourceAvailabilityModule resMod = new ResourceAvailability(intersections);
-
+        
+        MapReader mapReader;
+        MapVisualizer mapVisualizer;
+        
 	Main () {
-		
-		
-		intersections = Collections.unmodifiableList(intersections);
+            createMap();
+            intersections = Collections.unmodifiableList(intersections);
 	}
+        
+        final void createMap() {
+            mapReader = new MapReader();
+            MapReader.readMap();
+            intersections = MapReader.intersections();
+            mapVisualizer = new MapVisualizer(intersections);
+        }
+        
+        void printIntersections() {
+            for(Intersection inter : intersections) {
+                System.out.println(inter.id);
+            }
+        }
 	
 	
 	void run() throws Exception {

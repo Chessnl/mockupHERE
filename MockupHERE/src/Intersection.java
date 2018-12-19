@@ -6,19 +6,21 @@ public class Intersection implements Serializable {
 	
 	final public double longitude, latitude;
 	final public int index; // unique
+        final public long id;
 	
 	private Map<Intersection, Road> roadsHash = new HashMap<>();
 	private Set<Road> roadsSet = new HashSet<>();
 	private Set<Intersection> intersectionsSet = new HashSet<>();
 	
-	Intersection (double longitude, double latitude, int index) {
+	Intersection (double longitude, double latitude, int index, long id) {
 		this.longitude = longitude;
 		this.latitude = latitude;
 		this.index = index;
+                this.id = id;
 	}
 	
-	protected void addEdge(Intersection i, double distance, long time) {
-		Road r = new Road(this, i, distance, time);
+	protected void addEdge(Intersection i, double distance, long speed) {
+		Road r = new Road(this, i, distance, speed);
 		roadsHash.put(i, r);
 		roadsSet.add(r);
 		intersectionsSet.add(i);

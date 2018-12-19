@@ -9,11 +9,11 @@ public class Road implements Serializable {
 	public final long time;
 	public final double speed;
 	
-	public Road (Intersection from, Intersection to, double distance, long time) {
+	public Road (Intersection from, Intersection to, double distance, long speed) {
 		this.from = from;
 		this.to = to;
 		this.distance = distance;
-		this.time = time;
-		this.speed = distance / time;
+		this.speed = speed;
+                this.time = (long)(distance/(double)speed);
 	}
 }

@@ -13,7 +13,7 @@ import java.util.ListIterator;
 public class test {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
-		
+	    Main main = new Main();
 //		Intersection[][] map = new Intersection[3][3];
 //		
 //		int index = 0;
@@ -44,6 +44,7 @@ public class test {
 //		objectOutputStream.writeObject(intersections);
 //		objectOutputStream.close();
 		
+/*
 		ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("test1.test"));
 		List<Intersection> intersections2 = (List<Intersection>) objectInputStream.readObject();
 		objectInputStream.close();
@@ -55,5 +56,6 @@ public class test {
 			}
 			System.out.println();
 		}
-	}
+*/	
+    }
 }
