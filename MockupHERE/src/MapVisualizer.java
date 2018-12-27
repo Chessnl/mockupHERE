@@ -14,7 +14,7 @@ public class MapVisualizer extends JFrame {
     final static int SCREENWIDTH = 1500;
     final static int SCREENHEIGHT = 1000;
     final static int CIRCLEDIAM = 4;
-    final static int BORDER = 25;
+    final static int BORDER = 100;
     
     public MapVisualizer(List<Intersection> list) {
         intersections = list;
@@ -58,7 +58,7 @@ public class MapVisualizer extends JFrame {
     public void paint(Graphics g) {
         for (Intersection inter : intersections) {
             drawIntersection(g, inter);
-            for(Road road : inter.getRoads()) {
+            for(Road road : inter.getRoadsFrom()) {
                 drawRoad(g, road);
             }
         }

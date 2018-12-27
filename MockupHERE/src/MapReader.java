@@ -4,6 +4,7 @@
 
  */
 import java.io.FileNotFoundException;
+import java.util.NoSuchElementException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
@@ -11,12 +12,15 @@ import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.HashSet;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 public class MapReader {
+    
+    
     final static int speedMotorway = 120;
     final static int speedMotorwayLink = speedMotorway;
     final static int speedTrunk = 100;
@@ -31,13 +35,14 @@ public class MapReader {
     final static int speedResidential = 50;
     final static int speedLivingStreet = 30;
     final static int speedDefault = 50;
+    
     static List<Intersection> intersections;
     
     public static void readMap() {
         intersections = new ArrayList<>();
         JSONParser parser = new JSONParser();
         try {
-            Reader reader = new FileReader("maps/Eindhoven.json");
+            Reader reader = new FileReader("maps/Stockholm.json");
             Object obj = parser.parse(reader);
             JSONObject jsonObject = (JSONObject) obj;
             System.out.println(jsonObject);
@@ -46,20 +51,20 @@ public class MapReader {
             JSONArray elements = (JSONArray) jsonObject.get("elements");
             Iterator<JSONArray> iterator = elements.iterator();
             int counter = 0;
-            for(Object elementObject : elements) {
+            for (Object elementObject : elements) {
                 JSONObject element = (JSONObject) elementObject;
                 String type = (String) element.get("type");
-                if(type.equals("node")) {
+                if (type.equals("node")) {
                     long id = (long) element.get("id");
                     double latitude = (double) element.get("lat");
                     double longtitude = (double) element.get("lon");
                     intersections.add(new Intersection(longtitude, latitude, counter, id));
                 }
             }
-            for(Object elementObject : elements) {
+            for (Object elementObject : elements) {
                 JSONObject element = (JSONObject) elementObject;
                 String type = (String) element.get("type");
-                if(type.equals("way")) {
+                if (type.equals("way")) {
                     long id = (long) element.get("id");
                     String highway;
                     int maxSpeed;
@@ -67,8 +72,12 @@ public class MapReader {
                     Object tagsObject = element.get("tags");
                     JSONObject tags = (JSONObject) tagsObject;
                     highway = (String)tags.get("highway");
-                    if(tags.containsKey("maxspeed")) {
-                        maxSpeed = Integer.parseInt((String) tags.get("maxspeed"));
+                    if (tags.containsKey("maxspeed")) {
+                        String speedString = (String) tags.get("maxspeed");
+                        if( speedString.contains(" mph")) {
+                            speedString = speedString.replace(" mph", "");
+                        }
+                        maxSpeed = Integer.parseInt(speedString);
                     } else {
                         switch(highway) {
                             case "motorway": 
@@ -166,17 +175,61 @@ public class MapReader {
         }
     }
     
-    public static void clearMap() {
+    public static void clearMapIteration() throws IllegalStateException{
+        Set<Intersection> toRemove = new HashSet<>();
         for (int i = 0; i < intersections.size(); i++) {
             Intersection inter = intersections.get(i);
-            Set<Road> roads = inter.getRoads();
-            if (roads.isEmpty()) {
-                intersections.remove(i);
-                i--;
+            Set<Road> roadsFrom = inter.getRoadsFrom();
+            Set<Road> roadsTo = inter.getRoadsTo();
+            if (roadsFrom.size() <= 1 && roadsTo.size() <= 1) {
+                toRemove.add(inter);
                 continue;
-            } else if (roads.size() == 1) {
-                // How am I supposed to do this with sets?
             }
+            
+            if (roadsFrom.size() == 2 && roadsTo.size() == 2) {
+                boolean checkForAll = true;
+                for (Intersection interTo: inter.getAdjacentTo()) {
+                    boolean check = false;
+                    for (Intersection interFrom : inter.getAdjacentFrom()) {
+                        if (interTo.equals(interFrom)) {
+                            check = true;
+                        }
+                    }
+                    if (!check) {
+                        checkForAll = false;
+                    }
+                }
+                if (checkForAll) {
+                    toRemove.add(inter);
+                    continue;
+                }
+            }
+        }
+        for (Intersection inter : toRemove) {
+            int j = -1;
+            for (int i = 0; i < intersections.size(); i++) {
+                if (intersections.get(i).equals(inter)) {
+                    j = i;
+                    break;
+                    
+                }
+            }
+            if (j == -1) {
+                throw new IllegalStateException("Sommething went horribly wrong.");
+            }
+            intersections.get(j).cutNode();
+            intersections.remove(j);
+            
+        }
+    }
+    
+    public static void clearMap() {
+        int previousNumberNodes = intersections().size();
+        int newNumberNodes = 9999999;
+        while (previousNumberNodes != newNumberNodes) {
+            clearMapIteration();
+            previousNumberNodes = newNumberNodes;
+            newNumberNodes = intersections().size();
         }
     }
 

@@ -7,7 +7,7 @@ public class Road implements Serializable {
 	public final Intersection to;
 	public final double distance;
 	public final long time;
-	public final double speed;
+	public final long speed;
 	
 	public Road (Intersection from, Intersection to, double distance, long speed) {
 		this.from = from;
@@ -16,4 +16,8 @@ public class Road implements Serializable {
 		this.speed = speed;
                 this.time = (long)(distance/(double)speed);
 	}
+        
+        public boolean equals(Road road) {
+            return (road.from.equals(this.from) && road.to.equals(this.to));
+        }
 }

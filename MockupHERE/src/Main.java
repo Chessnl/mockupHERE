@@ -19,7 +19,10 @@ public class Main {
         final void createMap() {
             mapReader = new MapReader();
             MapReader.readMap();
+            System.out.println(MapReader.intersections().size());
+            MapReader.clearMap();
             intersections = MapReader.intersections();
+            System.out.println(intersections.size());
             mapVisualizer = new MapVisualizer(intersections);
         }
         
