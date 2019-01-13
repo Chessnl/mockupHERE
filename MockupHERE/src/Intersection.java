@@ -12,10 +12,10 @@ public class Intersection implements Serializable {
 	private Set<Intersection> adjacentIntersections = new HashSet<>();
 
 	// from i to this
-	private Map<Intersection, Road> roadsMapTo = new HashMap<>();
+	private java.util.Map<Intersection, Road> roadsMapTo = new HashMap<>();
 
 	// from this to i
-	private Map<Intersection, Road> roadsMapFrom = new HashMap<>();
+	private java.util.Map<Intersection, Road> roadsMapFrom = new HashMap<>();
 
 	Intersection (double longitude, double latitude, long id) {
 		this.longitude = longitude;

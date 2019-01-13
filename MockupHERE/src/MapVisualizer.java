@@ -2,9 +2,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class MapVisualizer extends JFrame {
-    static List<Intersection> intersections;
+    static Set<Intersection> intersections;
     static double maxLon;
     static double minLon;
     static double maxLat;
@@ -16,7 +17,7 @@ public class MapVisualizer extends JFrame {
     final static int CIRCLEDIAM = 4;
     final static int BORDER = 100;
     
-    public MapVisualizer(List<Intersection> list) {
+    public MapVisualizer(Set<Intersection> list) {
         intersections = list;
         setFrame();
         computeExtremes();

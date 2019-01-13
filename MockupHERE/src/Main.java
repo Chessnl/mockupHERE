@@ -30,9 +30,11 @@ public class Main {
 		MapReader.readMap();
 		System.out.println(MapReader.intersections().size());
 		MapReader.clearMap();
-		intersections = MapReader.intersections();
-		System.out.println(intersections.size());
-		mapVisualizer = new MapVisualizer(intersections);
+		
+		// @TODO, this should be changed, such that mapreader creates a map object instead of intersections
+		// intersections = MapReader.intersections();
+		System.out.println(map.getIntersections().size());
+		mapVisualizer = new MapVisualizer(map.getIntersections());
 	}
 
 	void run() {
