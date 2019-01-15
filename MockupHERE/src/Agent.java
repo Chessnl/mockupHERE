@@ -2,7 +2,7 @@
 
 public class Agent extends AgentModule {
 
-	public Agent(Intersection loc, ResourceAvailabilityModule resMod) {
+	public Agent(Intersection loc, ResourceAnalyzerModule resMod) {
 		super(loc, resMod);
 	}
 

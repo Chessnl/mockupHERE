@@ -2,9 +2,9 @@
 public abstract class AgentModule {
 	
 	public final Intersection currentLoc;
-	public final ResourceAvailabilityModule resMod;
+	public final ResourceAnalyzerModule resMod;
 	
-	AgentModule (Intersection currentLoc, ResourceAvailabilityModule resMod) {
+	AgentModule (Intersection currentLoc, ResourceAnalyzerModule resMod) {
 		this.currentLoc = currentLoc;
 		this.resMod = resMod;
 	}

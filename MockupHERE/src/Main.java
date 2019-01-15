@@ -1,7 +1,10 @@
+import java.text.NumberFormat;
 import java.util.*;
 
 public class Main {
 
+	List<Intersection> intersections = new ArrayList<>(); // acts as map
+	ResourceAnalyzerModule resMod = new ResourceAnalyzer(intersections);
 	private long score = 0;
 	private PriorityQueue<Event> events = new PriorityQueue<>();
 	private HashSet<AgentEvent> activeAgents = new HashSet<>();
@@ -9,12 +12,10 @@ public class Main {
 
 	private Map map;
 
-	ResourceAvailabilityModule resMod = new ResourceAvailability(map);
-
 	MapReader mapReader;
 	MapVisualizer mapVisualizer;
 
-	Main () {
+	Main () throws Exception {
 		// @TODO loads map and the resource streams
 		createMap();
 		ArrayDeque<ResourceEvent> resourceStream = new ArrayDeque<>();
@@ -30,14 +31,36 @@ public class Main {
 		MapReader.readMap();
 		System.out.println(MapReader.intersections().size());
 		MapReader.clearMap();
-		
+
 		// @TODO, this should be changed, such that mapreader creates a map object instead of intersections
 		// intersections = MapReader.intersections();
 		System.out.println(map.getIntersections().size());
 		mapVisualizer = new MapVisualizer(map.getIntersections());
 	}
+	
+	
+	void run() throws Exception {
 
-	void run() {
+		//Getting the memory used
+		Runtime runtime = Runtime.getRuntime();
+		NumberFormat format = NumberFormat.getInstance();
+
+		StringBuilder sb = new StringBuilder();
+		long maxMemory = runtime.maxMemory();
+		long allocatedMemory = runtime.totalMemory();
+		long freeMemory = runtime.freeMemory();
+
+		//probably unnecessary
+		sb.append("Performance Report: " + "<br/>");
+		sb.append("free memory: " + format.format(freeMemory / 1024) + "<br/>");
+		sb.append("allocated memory: " + format.format(allocatedMemory / 1024) + "<br/>");
+		sb.append("max memory: " + format.format(maxMemory / 1024) + "<br/>");
+
+		//still looking into this one "freeMemory + (maxMemory - allocatedMemory)"
+		sb.append("total free memory: " + format.format((freeMemory + (maxMemory - allocatedMemory)) / 1024) + "<br/>");
+
+		long startTime = System.nanoTime();
+
 		try {
 			while (!events.isEmpty()) {
 				events.add(events.poll().trigger());
@@ -45,6 +68,16 @@ public class Main {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		long endTime   = System.nanoTime();
+		long totalTime = endTime - startTime;
+
+		sb.append("running time: " + totalTime + "<br/>");
+
+		long allocatedMemoryAfter = runtime.totalMemory();
+		sb.append("allocated memory: " + format.format((allocatedMemoryAfter - allocatedMemory) / 1024) + "<br/>");
+
+
 	}
 
 	abstract class Event implements Comparable<Event> {
