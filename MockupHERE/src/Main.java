@@ -3,14 +3,14 @@ import java.util.*;
 
 public class Main {
 
-	List<Intersection> intersections = new ArrayList<>(); // acts as map
-	ResourceAnalyzerModule resMod = new ResourceAnalyzer(intersections);
+    private Map map;
+	ResourceAnalyzerModule resMod = new ResourceAnalyzer(map);
 	private long score = 0;
 	private PriorityQueue<Event> events = new PriorityQueue<>();
 	private HashSet<AgentEvent> activeAgents = new HashSet<>();
 	private HashSet<ResourceEvent> activeResources = new HashSet<>();
 
-	private Map map;
+
 
 	MapReader mapReader;
 	MapVisualizer mapVisualizer;

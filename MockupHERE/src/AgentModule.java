@@ -1,4 +1,3 @@
-
 public abstract class AgentModule {
 	
 	public final Intersection currentLoc;
