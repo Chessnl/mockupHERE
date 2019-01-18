@@ -81,10 +81,10 @@ public class JSONValue {
     /**
      * Encode an object into JSON text and write it to out.
      * <p>
-     * If this object is a Map or a List, and it's also a JSONStreamAware or a JSONAware, JSONStreamAware or JSONAware will be considered firstly.
+     * If this object is a COMSETsystem.Map or a List, and it's also a JSONStreamAware or a JSONAware, JSONStreamAware or JSONAware will be considered firstly.
      * <p>
-     * DO NOT call this method from writeJSONString(Writer) of a class that implements both JSONStreamAware and (Map or List) with 
-     * "this" as the first parameter, use JSONObject.writeJSONString(Map, Writer) or JSONArray.writeJSONString(List, Writer) instead. 
+     * DO NOT call this method from writeJSONString(Writer) of a class that implements both JSONStreamAware and (COMSETsystem.Map or List) with
+     * "this" as the first parameter, use JSONObject.writeJSONString(COMSETsystem.Map, Writer) or JSONArray.writeJSONString(List, Writer) instead.
      * 
      * @see org.json.simple.JSONObject#writeJSONString(Map, Writer)
      * @see org.json.simple.JSONArray#writeJSONString(List, Writer)
@@ -157,10 +157,10 @@ public class JSONValue {
 	/**
 	 * Convert an object to JSON text.
 	 * <p>
-	 * If this object is a Map or a List, and it's also a JSONAware, JSONAware will be considered firstly.
+	 * If this object is a COMSETsystem.Map or a List, and it's also a JSONAware, JSONAware will be considered firstly.
 	 * <p>
-	 * DO NOT call this method from toJSONString() of a class that implements both JSONAware and Map or List with 
-	 * "this" as the parameter, use JSONObject.toJSONString(Map) or JSONArray.toJSONString(List) instead. 
+	 * DO NOT call this method from toJSONString() of a class that implements both JSONAware and COMSETsystem.Map or List with
+	 * "this" as the parameter, use JSONObject.toJSONString(COMSETsystem.Map) or JSONArray.toJSONString(List) instead.
 	 * 
 	 * @see org.json.simple.JSONObject#toJSONString(Map)
 	 * @see org.json.simple.JSONArray#toJSONString(List)

@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * A JSON object. Key value pairs are unordered. JSONObject supports java.util.Map interface.
+ * A JSON object. Key value pairs are unordered. JSONObject supports java.util.COMSETsystem.Map interface.
  * 
  * @author FangYidong<fangyidong@yahoo.com.cn>
  */

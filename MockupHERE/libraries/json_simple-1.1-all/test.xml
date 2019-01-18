@@ -27,7 +27,7 @@
 	</target>
 	
 	<target name="compile">
-		<javac 	srcdir="test" 
+		<javac 	srcdir="COMSETsystem.test"
 				destdir="build/test"
 				includes="**/*.java"
 				encoding="UTF-8"

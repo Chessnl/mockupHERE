@@ -1,3 +1,5 @@
+package COMSETsystem;
+
 import java.util.ArrayList;
 
 public class ExampleResourceAnalyzer extends ResourceAnalyzerModule{

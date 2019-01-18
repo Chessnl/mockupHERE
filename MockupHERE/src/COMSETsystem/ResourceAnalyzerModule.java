@@ -1,3 +1,5 @@
+package COMSETsystem;
+
 public abstract class ResourceAnalyzerModule {
 
 	Map map;

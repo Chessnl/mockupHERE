@@ -1,3 +1,5 @@
+package COMSETsystem;
+
 import java.util.*;
 
 //Random walk search algorithm

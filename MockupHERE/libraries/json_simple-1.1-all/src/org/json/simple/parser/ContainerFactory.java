@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public interface ContainerFactory {
 	/**
-	 * @return A Map instance to store JSON object, or null if you want to use org.json.simple.JSONObject.
+	 * @return A COMSETsystem.Map instance to store JSON object, or null if you want to use org.json.simple.JSONObject.
 	 */
 	Map createObjectContainer();
 	
