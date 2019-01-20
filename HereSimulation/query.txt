@@ -1,0 +1,1 @@
+type:way and (highway=motorway or highway=trunk or highway=primary or highway=secondary or highway=tertiary or highway=unclassified or highway=residential or highway=motorway_link or highway=trunk_link or highway=primary_link or highway=secondary_link or highway=tertiary_link or highway=living_street or juction=roundabout)
