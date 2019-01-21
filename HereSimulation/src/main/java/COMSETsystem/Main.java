@@ -4,6 +4,7 @@ import MapCreation.*;
 import java.text.NumberFormat;
 import java.util.*;
 import DataParsing.*;
+import java.io.*;
 
 public class Main {
 
@@ -16,19 +17,16 @@ public class Main {
 
 
 
-	Main () throws Exception {
-		// @TODO loads map and the resource streams
-                
+	public Main () throws Exception {
                 // to create a new map, see ReadMe
 		// createMap("SanFrancisco");
-                
-                // initialize the cityMap
-                Initializer("SanFrancisco");
                 
                 // To visualize the map, see ReadMe 
                 // MapVisualizer visualizer = new MapVisualizer(map, true);
 
-		// @TODO events; needs to set events
+                Serializer();
+                Deserializer();
+                
 		run();
 	}
 
@@ -83,31 +81,41 @@ public class Main {
 
 	}
 
-	void Initializer(String mapName) {
-            
-            map = new CityMap(mapName);
-            
-            String path = "data/sftaxi_stream.csv";
-            CSVParser parser = new CSVParser(path);
-            ArrayList<TimestampAgRe> eventsParsed = parser.parse();
-            
-            for (TimestampAgRe event : eventsParsed) {
-                try {
-                    Intersection i = map.getNearestIntersection(event.getLon(), event.getLat());
-                    if (event.getType().equals("agent")) {
-                        AgentEvent ev = new AgentEvent(i, event.getTime());
-                        events.add(ev);
-                    } else {
-                        ResourceEvent ev = new ResourceEvent(i, event.getTime());
-                        events.add(ev);
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+	void Serializer() {
+            MapWithData mapWD = new MapWithData("SanFrancisco", "datasets/sftaxi_stream.csv");
+            mapWD.createMapWithData();
+            try {
+                FileOutputStream fileOut = new FileOutputStream("map.ser");
+                ObjectOutputStream out = new ObjectOutputStream(fileOut);
+                out.writeObject(mapWD);
+                out.close();
+                fileOut.close(); 
+            } catch (IOException i) {
+                i.printStackTrace();
             }
     }
+        
+        void Deserializer() {
+            MapWithData mapWD = null;
+            try {
+                FileInputStream fileIn = new FileInputStream("map.ser");
+                ObjectInputStream in = new ObjectInputStream(fileIn);
+                mapWD = (MapWithData) in.readObject();
+                in.close();
+                fileIn.close();
+            } catch (IOException i) {
+                i.printStackTrace();
+                return;
+            } catch (ClassNotFoundException c) {
+                System.out.println("MapWithData class not found");
+                c.printStackTrace();
+                return;
+            }
+            events = mapWD.getEvents();
+            map = mapWD.getMap();
+        }
 
-	abstract class Event implements Comparable<Event> {
+	public abstract class Event implements Comparable<Event> {
 
 		long time;
 
@@ -127,12 +135,12 @@ public class Main {
 		}
 	}
 
-	class AgentEvent extends Event {
+	public class AgentEvent extends Event {
 
 		Intersection loc;
 		final AgentModule agent;
 
-		AgentEvent (Intersection loc, long available) {
+		public AgentEvent (Intersection loc, long available) {
 			super(available);
 			this.loc = loc;
 			agent = new AgentNaive(loc, resMod);
@@ -166,11 +174,11 @@ public class Main {
 		}
 	}
 
-	class ResourceEvent extends Event {
+	public class ResourceEvent extends Event {
 
 		final Intersection loc;
 
-		ResourceEvent (Intersection loc, long available) {
+		public ResourceEvent (Intersection loc, long available) {
 			super(available);
 			this.loc = loc;
 		}
