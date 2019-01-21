@@ -3,6 +3,7 @@ package COMSETsystem;
 import MapCreation.*;
 import java.text.NumberFormat;
 import java.util.*;
+import DataParsing.*;
 
 public class Main {
 
@@ -83,15 +84,27 @@ public class Main {
 	}
 
 	void Initializer(String mapName) {
-        ArrayDeque<ResourceEvent> resourceStream = new ArrayDeque<>();
-        ArrayDeque<AgentEvent> agentStream = new ArrayDeque<>();
-        for(ResourceEvent r: resourceStream) {
-            events.add(r);
-        }
-        for(AgentEvent a: agentStream) {
-            events.add(a);
-        }
-        map = new CityMap(mapName);
+            
+            map = new CityMap(mapName);
+            
+            String path = "data/sftaxi_stream.csv";
+            CSVParser parser = new CSVParser(path);
+            ArrayList<TimestampAgRe> eventsParsed = parser.parse();
+            
+            for (TimestampAgRe event : eventsParsed) {
+                try {
+                    Intersection i = map.getNearestIntersection(event.getLon(), event.getLat());
+                    if (event.getType().equals("agent")) {
+                        AgentEvent ev = new AgentEvent(i, event.getTime());
+                        events.add(ev);
+                    } else {
+                        ResourceEvent ev = new ResourceEvent(i, event.getTime());
+                        events.add(ev);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
     }
 
 	abstract class Event implements Comparable<Event> {
