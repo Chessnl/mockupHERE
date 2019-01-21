@@ -19,7 +19,7 @@ public class Main {
 
 	public Main () throws Exception {
                 // to create a new map, see ReadMe
-		// createMap("SanFrancisco");
+		createMap("SanFrancisco");
                 
                 // To visualize the map, see ReadMe 
                 // MapVisualizer visualizer = new MapVisualizer(map, true);
