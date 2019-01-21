@@ -4,7 +4,7 @@ All the newest code resides in /HereSimulation/. The directory /MockupHERE/ is a
 
 The program is run from /HereSimulation/src/main/java/COMSETsystem/Main.java.
 
-MAPS:
+MAPS: (Resposibility of Robert van Barlingen, Bobby.van.barlingen@gmail.com)
 To use a map, it first has to be created. This is a one-time process. Once a map is created it can be used repeatedly. 
 To create a map, the program takes an OpenStreetMap map in the form of a JSON file as input. To get this map, visit https://overpass-turbo.eu/. 
 On that page, mark the desired bounding box by clicking the "manually select bbox"on the left had side of the map window. Once the bbox is set, click on the "wizard" button at the top. This will show a pop-up. In the textbox at the top of the pop-up, copy and paste the text from /HereSimulation/query.txt. Then click "build and run query".
