@@ -1,9 +1,15 @@
-package COMSETsystem;
+package UserExamples;
+
+import COMSETsystem.AgentModule;
+import COMSETsystem.Intersection;
+import COMSETsystem.ResourceAnalyzerModule;
 
 import java.util.*;
 
-//Random walk search algorithm
-//Moves randomly to one of the adjacent intersection of the current intersection
+/**
+ * Random walk search algorithm:
+ * Moves randomly to one of the adjacent intersection of the current intersection
+ */
 public class AgentNaive extends AgentModule {
 
     public AgentNaive(Intersection loc, ResourceAnalyzerModule resMod) {
@@ -11,7 +17,7 @@ public class AgentNaive extends AgentModule {
     }
 
     @Override
-    Intersection move() {
+    public Intersection move(Object resourseAnalysis) {
         return (Intersection)getRandomObject(currentLoc.getAdjacentFrom() );
     }
 
