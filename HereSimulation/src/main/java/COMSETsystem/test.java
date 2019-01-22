@@ -7,6 +7,7 @@ public class test {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
             try {
                 Main main = new Main();
+                main.create();
             } catch (Exception e) {
                 e.printStackTrace();
             }

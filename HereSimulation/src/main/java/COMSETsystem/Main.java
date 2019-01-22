@@ -6,7 +6,7 @@ import java.util.*;
 import DataParsing.*;
 import java.io.*;
 
-public class Main {
+public class Main implements Serializable {
 
         private CityMap map;
 	ResourceAnalyzerModule resMod = new ResourceAnalyzer(map);
@@ -17,15 +17,15 @@ public class Main {
 
 
 
-	public Main () throws Exception {
+	public void create() throws Exception {
                 // to create a new map, see ReadMe
-		createMap("SanFrancisco");
+		//createMap("SanFrancisco");
                 
                 // To visualize the map, see ReadMe 
                 // MapVisualizer visualizer = new MapVisualizer(map, true);
 
-                Serializer();
-                Deserializer();
+                Serializer("SanFrancisco");
+                Deserializer("SanFrancisco");
                 
 		run();
 	}
@@ -81,11 +81,14 @@ public class Main {
 
 	}
 
-	void Serializer() {
-            MapWithData mapWD = new MapWithData("SanFrancisco", "datasets/sftaxi_stream.csv");
-            mapWD.createMapWithData();
+	void Serializer(String filename) {
+            MapCreator creator = new MapCreator(filename);
+            creator.clearAndGroup();
+            creator.createGrid();
+            MapWithData mapWD = new MapWithData(creator.outputCityMap(), "datasets/sftaxi_stream.csv");
+            mapWD.createMapWithData(this);
             try {
-                FileOutputStream fileOut = new FileOutputStream("map.ser");
+                FileOutputStream fileOut = new FileOutputStream("maps/" + filename + "_map.sec");
                 ObjectOutputStream out = new ObjectOutputStream(fileOut);
                 out.writeObject(mapWD);
                 out.close();
@@ -95,10 +98,10 @@ public class Main {
             }
     }
         
-        void Deserializer() {
+        void Deserializer(String filename) {
             MapWithData mapWD = null;
             try {
-                FileInputStream fileIn = new FileInputStream("map.ser");
+                FileInputStream fileIn = new FileInputStream("maps/" + filename + "_map.sec");
                 ObjectInputStream in = new ObjectInputStream(fileIn);
                 mapWD = (MapWithData) in.readObject();
                 in.close();
@@ -115,7 +118,7 @@ public class Main {
             map = mapWD.getMap();
         }
 
-	public abstract class Event implements Comparable<Event> {
+	public abstract class Event implements Comparable<Event>, Serializable {
 
 		long time;
 

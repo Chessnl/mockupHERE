@@ -1,6 +1,8 @@
 package COMSETsystem;
 
-public abstract class ResourceAnalyzerModule {
+import java.io.Serializable;
+
+public abstract class ResourceAnalyzerModule implements Serializable {
 
 	CityMap map;
 

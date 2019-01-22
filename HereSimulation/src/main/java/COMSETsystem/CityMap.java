@@ -95,6 +95,24 @@ public class CityMap implements Iterable<Intersection>, Serializable {
         readGrid(filename);
     } 
     
+    public CityMap(Map<Long, Intersection> intersections, long numberIntersections, 
+            double maxLat, double minLat, double maxLong, double minLong,
+            List<List<Long>> grid, double gridSideLength, double squaresSideLength,
+            long numberDivisions, double bottomLeftX, double bottomLeftY) {
+        this.intersections = intersections;
+        this.numberIntersections = numberIntersections;
+        this.maxLat = maxLat;
+        this.minLat = minLat;
+        this.maxLong = maxLong;
+        this.minLong = minLong;
+        this.grid = grid;
+        this.gridSideLength = gridSideLength;
+        this.squaresSideLength = squaresSideLength;
+        this.numberDivisions = numberDivisions;
+        this.bottomLeftX = bottomLeftX;
+        this.bottomLeftY = bottomLeftY;
+    }
+    
     // TODO: add javaadoc
     public long timeBetween (Intersection start, Intersection stop) {
 		return distances.get(start).get(stop);
@@ -179,10 +197,10 @@ public class CityMap implements Iterable<Intersection>, Serializable {
             gridSideLength = (double)gridJSON.get("gridLength");
             squaresSideLength = gridSideLength/(double)numberDivisions;
             JSONArray columnsJSON = (JSONArray) gridJSON.get("grid");
-            grid = new ArrayList<>();
+            grid = new ArrayList<List<Long>>((int)numberDivisions);
             for (Object columnObject : columnsJSON) {
                 JSONArray elementsJSON = (JSONArray) columnObject;
-                List<Long> column = new ArrayList<>();
+                List<Long> column = new ArrayList<Long>((int)numberDivisions);
                 for (Object idObject : elementsJSON) {
                     long id = (long)idObject;
                     column.add(id);
@@ -315,7 +333,10 @@ public class CityMap implements Iterable<Intersection>, Serializable {
             throws FileNotFoundException, IllegalArgumentException {
         // check if the point is inside the grid to begin with
         if ( !inGrid( longitude, latitude ) ) {
-            throw new IllegalArgumentException("The point is not inside the grid.");
+            throw new IllegalArgumentException("Point (" + longitude + ", " + latitude + 
+                    ") is not inside the grid defined by bottom left point (" +
+                    bottomLeftX + ", " + bottomLeftY + ") and gridSideLegth = " + 
+                    gridSideLength);
         }
         // find the correct square based on the coordinates of the point
         // TODO: find something more efficient to get rid of boundy case if x or y = numDivisions
