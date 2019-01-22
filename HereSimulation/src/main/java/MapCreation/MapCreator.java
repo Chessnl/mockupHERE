@@ -106,6 +106,11 @@ public class MapCreator {
     double bottomLeftY;
     double gridLength;
     double squareLength;
+    // buffer between the bounding box of the map and the edge of the grid.
+    // This is necessary in order to ensure that all the resources are located 
+    // inside the grid. 
+    // absolute distance, not percentage
+    double bufferGrid = 0.5;
     
     /**
      * constructor of the mapReader. Reads the JSON file defined by fileName and
@@ -829,7 +834,7 @@ public class MapCreator {
      * 
      */
     public void createGrid() {
-        createGrid(lengthGrid(), minLongitude(), minLatitude());
+        createGrid(lengthGrid() + bufferGrid/2, minLongitude() - bufferGrid/2, minLatitude() - bufferGrid/2);
     }
     
     /**
@@ -1021,5 +1026,11 @@ public class MapCreator {
             oldToNewId.put(id, index++);
         }
         return oldToNewId;
+    }
+    
+    public CityMap outputCityMap() {
+        return new CityMap(intersections, intersections.size(), 
+            maxLatitude(), minLatitude(), maxLongitude(), maxLongitude(), grid, 
+            gridLength, (gridLength/(double)grid.size()), grid.size(), bottomLeftX, bottomLeftY);
     }
 }
