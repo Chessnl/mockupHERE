@@ -11,19 +11,18 @@ public class MapWithData implements Serializable {
     private String dataPath;
     private PriorityQueue<Main.Event> events;
 
-    public MapWithData (String mapName, String dataPath) {
-        map = new CityMap(mapName);
+    public MapWithData (CityMap map, String dataPath) {
+        this.map = map;
         this.dataPath = dataPath;
         events = new PriorityQueue<>();
     }
     
-    public void createMapWithData() {
+    public void createMapWithData(Main main) {
         
         CSVParser parser = new CSVParser(dataPath);
         ArrayList<TimestampAgRe> eventsParsed = parser.parse();
 
         try {
-            Main main = new Main();
             for (TimestampAgRe event : eventsParsed) {
                 Intersection i = map.getNearestIntersection(event.getLon(), event.getLat());
                 if (event.getType().equals("agent")) {
