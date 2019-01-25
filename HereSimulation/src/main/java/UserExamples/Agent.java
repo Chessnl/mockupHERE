@@ -1,8 +1,6 @@
 package UserExamples;
 
-import COMSETsystem.AgentModule;
-import COMSETsystem.Intersection;
-import COMSETsystem.ResourceAnalyzerModule;
+import COMSETsystem.*;
 
 public class Agent extends AgentModule {
 
@@ -11,9 +9,8 @@ public class Agent extends AgentModule {
 	}
 
 	@Override
-	//TODO Implement your own move() and other auxiliary methods
-	public Intersection move(Object resourseAnalysis) {
-
+	public Intersection move() {
+		//TODO Implement your own move() and other auxiliary methods
 		return null;
 	}
 }

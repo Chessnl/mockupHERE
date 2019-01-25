@@ -1,8 +1,7 @@
 package UserExamples;
 
-import COMSETsystem.CityMap;
-import COMSETsystem.Intersection;
-import COMSETsystem.ResourceAnalyzerModule;
+import COMSETsystem.*;
+
 
 public class ResourceAnalyzer extends ResourceAnalyzerModule {
 
@@ -11,7 +10,7 @@ public class ResourceAnalyzer extends ResourceAnalyzerModule {
 	}
 
 	@Override
-	//TODO Implement your own updateList and other auxiliary methods
-	public Object updateList(Intersection e){return null;}
-
+	public void newResource(Intersection e) {
+		// TODO Auto-generated method stub
+	}
 }

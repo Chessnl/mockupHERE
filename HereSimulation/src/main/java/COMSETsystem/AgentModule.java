@@ -13,9 +13,8 @@ public abstract class AgentModule {
 	/**
 	 * This method should be overridden in every Agent implementation in order to return an Intersection that the
 	 * Main can use to move the Agent
-	 * @param resourseAnalysis - some object that the Agent may use to make better moves across the map
 	 * @return Intersection that the Agent is going to move to
 	 */
-	public abstract Intersection move(Object resourseAnalysis);
+	public abstract Intersection move();
 	
 }
