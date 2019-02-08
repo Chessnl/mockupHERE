@@ -6,8 +6,9 @@ import java.util.PriorityQueue;
 import java.io.Serializable;
 
 public class MapWithData implements Serializable {
+    private static final long serialVersionUID = 3477769768992824431L;
     
-    private CityMap map;
+    public CityMap map;
     private String dataPath;
     private PriorityQueue<Main.Event> events;
 
@@ -23,7 +24,13 @@ public class MapWithData implements Serializable {
         ArrayList<TimestampAgRe> eventsParsed = parser.parse();
 
         try {
+            System.out.println("start of for");
+            long counter = 0;
             for (TimestampAgRe event : eventsParsed) {
+                counter++;
+                if (counter % 1000 == 0) {
+                System.out.println(counter);
+                }
                 Intersection i = map.getNearestIntersection(event.getLon(), event.getLat());
                 if (event.getType().equals("agent")) {
                     Main.AgentEvent ev = main.new AgentEvent(i, event.getTime());
@@ -33,6 +40,8 @@ public class MapWithData implements Serializable {
                     events.add(ev);
                 }
             }
+            map.removeGrid();
+            //map.fixStructure();
         } catch (Exception e) {
             e.printStackTrace();
         }

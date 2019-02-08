@@ -59,7 +59,7 @@ public class CityMap implements Iterable<Intersection>, Serializable {
     private double maxLong;
     private double minLong;
     
-    private HashMap<Long, HashMap<Long ,Long>> distances = new HashMap<>();
+    public HashMap<Long, HashMap<Long ,Long>> distances = new HashMap<>();
     
     
     // a square grid of squares.The intesection in each square means that the intersection
@@ -72,7 +72,7 @@ public class CityMap implements Iterable<Intersection>, Serializable {
     // computer from the other information.
     // Note 2: the grid refers to the id of the interesctions, not the intersections
     // themselves
-    private List<List<Long>> grid;
+    public List<List<Long>> grid;
     private double gridSideLength; // length of the sides of the grid
     private double squaresSideLength; // length of the sides of the smaller squares
     // number of divisions of the grid into small squares
@@ -414,6 +414,18 @@ public class CityMap implements Iterable<Intersection>, Serializable {
         calcDistances();
         intersections = Collections.unmodifiableMap(intersections);
         grid = Collections.unmodifiableList(grid);
+    }
+    
+    /**
+     * Removes the grid
+     */
+    public void removeGrid() {
+        grid.clear();
+        gridSideLength = 0;
+        squaresSideLength = 0;
+        numberDivisions = 0;
+        bottomLeftX = 0;
+        bottomLeftY = 0;
     }
 
     private void calcDistances() {

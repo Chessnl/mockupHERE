@@ -1030,7 +1030,7 @@ public class MapCreator {
     
     public CityMap outputCityMap() {
         return new CityMap(intersections, intersections.size(), 
-            maxLatitude(), minLatitude(), maxLongitude(), maxLongitude(), grid, 
+            maxLatitude(), minLatitude(), maxLongitude(), minLongitude(), grid, 
             gridLength, (gridLength/(double)grid.size()), grid.size(), bottomLeftX, bottomLeftY);
     }
 }
