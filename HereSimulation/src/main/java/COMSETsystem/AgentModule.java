@@ -10,6 +10,6 @@ public abstract class AgentModule {
 		this.resMod = resMod;
 	}
 	
-	abstract Intersection move();
+	abstract Intersection move(); 
 	
 }

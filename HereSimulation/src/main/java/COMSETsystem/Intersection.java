@@ -16,10 +16,10 @@ public class Intersection implements Serializable {
         public long id;
         
         // from i to this
-        private Map<Intersection, Road> roadsMapTo = new HashMap<>();
+        public Map<Intersection, Road> roadsMapTo = new HashMap<>();
         
         // from this to i
-        private Map<Intersection, Road> roadsMapFrom = new HashMap<>();
+        public Map<Intersection, Road> roadsMapFrom = new HashMap<>();
 	
 	public Intersection (double longitude, double latitude, long id) {
             this.longitude = longitude;
@@ -117,5 +117,10 @@ public class Intersection implements Serializable {
         
         public boolean equals(Intersection inter) {
             return (inter.id == this.id);
+        }
+        
+        public void removeRoads() {
+            roadsMapTo.clear();
+            roadsMapFrom.clear();
         }
 }

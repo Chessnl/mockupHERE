@@ -10,7 +10,7 @@ public class MapWithData implements Serializable {
     
     public CityMap map;
     private String dataPath;
-    private PriorityQueue<Main.Event> events;
+    public PriorityQueue<Main.Event> events;
 
     public MapWithData (CityMap map, String dataPath) {
         this.map = map;
@@ -22,15 +22,9 @@ public class MapWithData implements Serializable {
         
         CSVParser parser = new CSVParser(dataPath);
         ArrayList<TimestampAgRe> eventsParsed = parser.parse();
-
         try {
-            System.out.println("start of for");
             long counter = 0;
             for (TimestampAgRe event : eventsParsed) {
-                counter++;
-                if (counter % 1000 == 0) {
-                System.out.println(counter);
-                }
                 Intersection i = map.getNearestIntersection(event.getLon(), event.getLat());
                 if (event.getType().equals("agent")) {
                     Main.AgentEvent ev = main.new AgentEvent(i, event.getTime());
@@ -41,6 +35,7 @@ public class MapWithData implements Serializable {
                 }
             }
             map.removeGrid();
+            
             //map.fixStructure();
         } catch (Exception e) {
             e.printStackTrace();

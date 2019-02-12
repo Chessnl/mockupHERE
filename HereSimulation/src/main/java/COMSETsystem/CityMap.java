@@ -51,7 +51,8 @@ public class CityMap implements Iterable<Intersection>, Serializable {
     private static final long serialVersionUID = -8020298097735108102L;
     
     // a mapping from all the intersection ids to corresponding Interesctions
-    private Map<Long, Intersection> intersections;
+    public Map<Long, Intersection> intersections;
+    public List<Road> roads;
     private long numberIntersections; //number of intersections
     // maximum and minimum longitude and latitude
     private double maxLat;
@@ -111,6 +112,38 @@ public class CityMap implements Iterable<Intersection>, Serializable {
         this.numberDivisions = numberDivisions;
         this.bottomLeftX = bottomLeftX;
         this.bottomLeftY = bottomLeftY;
+    }
+    
+    /**
+     * Splits the roads and the intersections such that there is no reference 
+     * Intersections objects to Road objects and vise versa. This method needs
+     * to be run before serializing this class. Otherwise it will give a 
+     * stackoverflow error.
+     */
+    public void splitRoadsAndIntersections() {
+        roads = new ArrayList<>();
+        for (Intersection inter : intersections.values()) {
+            for (Road road : inter.getRoadsFrom()) {
+                road.removeIntersections();
+                roads.add(road);
+            }
+            inter.removeRoads();
+        }
+    }
+    
+    /**
+     * Combines the roads and the intersections after having split them. This 
+     * method needs to be run after deserializing the class. 
+     */
+    public void combineRoadsAndIntersections() {
+        for (Road road : roads) {
+            Intersection interTo = intersections.get(road.toID);
+            Intersection interFrom = intersections.get(road.fromID);
+            road.to = interTo;
+            road.from = interFrom;
+            interTo.roadsMapTo.put(interFrom, road);
+            interFrom.roadsMapFrom.put(interTo, road);
+        }
     }
     
     // TODO: add javaadoc
@@ -426,6 +459,12 @@ public class CityMap implements Iterable<Intersection>, Serializable {
         numberDivisions = 0;
         bottomLeftX = 0;
         bottomLeftY = 0;
+    }
+    
+    public void removeEverything() {
+        removeGrid();
+        grid = null;
+        intersections = null;
     }
 
     private void calcDistances() {

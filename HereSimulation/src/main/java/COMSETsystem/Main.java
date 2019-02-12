@@ -18,12 +18,6 @@ public class Main implements Serializable {
 
 
 	public void create() throws Exception {
-                // to create a new map, see ReadMe
-		// createMap("SanFrancisco");
-                
-                // To visualize the map, see ReadMe 
-                // MapVisualizer visualizer = new MapVisualizer(map, true);
-                
                 Serializer("SanFrancisco");
                 Deserializer("SanFrancisco");
 	}
@@ -84,14 +78,16 @@ public class Main implements Serializable {
             MapCreator creator = new MapCreator(filename);
             creator.clearAndGroup();
             creator.createGrid();
-            MapWithData mapWD = new MapWithData(creator.outputCityMap(), "datasets/sftaxi_stream.csv");
+            CityMap cityMap = creator.outputCityMap();
+            cityMap.splitRoadsAndIntersections();
+            MapWithData mapWD = new MapWithData(cityMap, "datasets/small_stream.csv");
             mapWD.createMapWithData(this);
-            System.out.println(mapWD.map.grid.size());
             try {
                 FileOutputStream fileOut = new FileOutputStream("maps/" + filename + "_map.sec");
                 BufferedOutputStream bufferedOut = new BufferedOutputStream(fileOut);
                 ObjectOutputStream out = new ObjectOutputStream(bufferedOut);
                 out.writeObject(mapWD);
+                System.out.println("Yeeeeeeeeeey");
                 out.close();
                 fileOut.close(); 
             } catch (IOException i) {
@@ -117,6 +113,7 @@ public class Main implements Serializable {
                 return;
             }
             events = mapWD.getEvents();
+            mapWD.map.combineRoadsAndIntersections();
             map = mapWD.getMap();
         }
 
@@ -152,7 +149,7 @@ public class Main implements Serializable {
 			this.loc = loc;
 			agent = new AgentNaive(loc, resMod);
 		}
-
+                
 		@Override
 		Event trigger() throws Exception {
 			// if there are resources available that were not assigned, assign agent to the closest resource
@@ -177,6 +174,7 @@ public class Main implements Serializable {
 			if (!loc.isAdjacent(nextLoc)) throw new Exception("move not made to an adjacent location");
 			time += loc.roadTo(nextLoc).time;
 			loc = nextLoc;
+
 			return this;
 		}
                 

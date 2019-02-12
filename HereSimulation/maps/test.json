@@ -1,0 +1,2699 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.55.5 2ca3f387",
+  "osm3s": {
+    "timestamp_osm_base": "2019-02-08T14:04:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "way",
+      "id": 14884947,
+      "nodes": [
+        147057587,
+        3908332224,
+        147057610,
+        3257418553,
+        147057615,
+        147057619,
+        147057623,
+        147057627
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Vestingstraat",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 14884949,
+      "nodes": [
+        147057587,
+        147057599,
+        3908332246,
+        147057603,
+        5619008164,
+        147057605,
+        147057607
+      ],
+      "tags": {
+        "highway": "living_street",
+        "maxspeed": "20",
+        "name": "Sint-Katharinavest",
+        "oneway": "no",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 14885163,
+      "nodes": [
+        147057607,
+        3286018380,
+        147060796
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Zuster Bernardastraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 14885166,
+      "nodes": [
+        147060906,
+        4534630896,
+        906793372,
+        147060921,
+        906793373,
+        3257418530,
+        906793357,
+        906793364,
+        147060936
+      ],
+      "tags": {
+        "cycleway": "lane",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Monseigneur Senciestraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 14885167,
+      "nodes": [
+        147057593,
+        147057631,
+        147057635,
+        462252470,
+        6258181614,
+        147057638,
+        147057641
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Dekenstraat",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 14885168,
+      "nodes": [
+        147060796,
+        4945666250,
+        147060802,
+        250046011
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Minderbroedersstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 14885964,
+      "nodes": [
+        147070992,
+        2301820576,
+        250045841,
+        4813092011,
+        147070989,
+        4256103067,
+        3286018372,
+        3286018373,
+        4004778889,
+        4319821702,
+        489447472,
+        4256103061,
+        4319821705
+      ],
+      "tags": {
+        "cycleway:left": "opposite_lane",
+        "cycleway:right": "lane",
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Basiliekstraat",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146698,
+      "nodes": [
+        4945666250,
+        4945666251,
+        250046221,
+        250044873,
+        250044874
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Korte Vest",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146715,
+      "nodes": [
+        2301820577,
+        5372707153,
+        2301820579,
+        4945666252,
+        250045008,
+        2301820602,
+        1630624551,
+        3286018376,
+        250045027
+      ],
+      "tags": {
+        "cycleway": "track",
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Bergensesteenweg"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146724,
+      "nodes": [
+        250045027,
+        3286018379,
+        250045061,
+        4599486445,
+        250046222,
+        2301820952,
+        250044874
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxlength": "7",
+        "maxspeed": "30",
+        "name": "Bergensesteenweg",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146734,
+      "nodes": [
+        147060898,
+        4534630893,
+        2890915463,
+        462252827
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Joseph Possozplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146746,
+      "nodes": [
+        2617871513,
+        250045460,
+        4286657220,
+        250045459,
+        2301820574,
+        2301820571,
+        3220248685,
+        147070992
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "Willamekaai",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146807,
+      "nodes": [
+        147057607,
+        3910303573,
+        250045957
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Zuster Bernardastraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146809,
+      "nodes": [
+        250045005,
+        250045955,
+        250046006,
+        250045956,
+        250045957
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Poststraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146823,
+      "nodes": [
+        250046006,
+        462257172
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Baron Jacquesstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146828,
+      "nodes": [
+        250046222,
+        250046210
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxlength": "8",
+        "maxspeed": "30",
+        "name": "Leeuwenstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146829,
+      "nodes": [
+        250046221,
+        6105450867,
+        250046213
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Theodore Van Ruycheveltstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146830,
+      "nodes": [
+        250046212,
+        250045006
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Victor Baetensstraat",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "surface": "sett"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146831,
+      "nodes": [
+        147060790,
+        250046011
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Oudstrijdersplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146833,
+      "nodes": [
+        250046210,
+        250046213
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Oudstrijdersplein",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146834,
+      "nodes": [
+        250046211,
+        250046210
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Oudstrijdersplein",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146839,
+      "nodes": [
+        462277972,
+        462277966,
+        4354154166,
+        462277965,
+        2301820826,
+        4354154165,
+        4354154164,
+        4354154163,
+        5186475746,
+        5856080652
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Molenborre",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23146865,
+      "nodes": [
+        462255341,
+        5167537142,
+        462255349,
+        462255401,
+        462255289,
+        250046576,
+        250046575,
+        250046574,
+        3908332207,
+        3908332205,
+        250046573
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Vondel",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26264562,
+      "nodes": [
+        146707718,
+        3908332227,
+        147057587,
+        147057593,
+        5619008157,
+        5548424357,
+        4300440897
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Ninoofsesteenweg",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33421394,
+      "nodes": [
+        250046292,
+        3908332810,
+        3908332212,
+        3908332802,
+        380276161,
+        2889046450,
+        250045066
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Joseph Possozplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33421398,
+      "nodes": [
+        250046573,
+        3908332188,
+        3908332776,
+        250045139
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Joseph Possozplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33421399,
+      "nodes": [
+        250046573,
+        250046293,
+        2637434694
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Joseph Possozplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 33421400,
+      "nodes": [
+        250045139,
+        3908332792,
+        3908332241,
+        3908332813,
+        462252822,
+        3880705746
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Joseph Possozplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38911831,
+      "nodes": [
+        462252822,
+        462252824,
+        462252825,
+        462252826,
+        3908332179,
+        462252827
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Sollenbeemd",
+        "surface": "cobblestone"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38912031,
+      "nodes": [
+        147060850,
+        462255382,
+        462277891,
+        2890943926
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Handbooghof"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38914779,
+      "nodes": [
+        147070964,
+        462276973,
+        4732311083,
+        250044887
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Nieuwstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38914899,
+      "nodes": [
+        250044874,
+        2301820951,
+        462277972
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Molenborre",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38914909,
+      "nodes": [
+        462277968,
+        462278034,
+        462278035,
+        4599486444,
+        462278037
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Molenborre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 39447591,
+      "nodes": [
+        472464162,
+        2301820567,
+        4286657222,
+        472464164,
+        472464166,
+        472464168
+      ],
+      "tags": {
+        "bicycle": "use_sidepath",
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Stationsplein",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 40429928,
+      "nodes": [
+        147060815,
+        462277971,
+        147060814,
+        3286018377,
+        250045027
+      ],
+      "tags": {
+        "cycleway:left": "opposite_lane",
+        "cycleway:right": "lane",
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Arkenvest",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 40429929,
+      "nodes": [
+        4319821705,
+        5215668384,
+        5215668383,
+        147060841,
+        147060845,
+        4004775274,
+        147060847,
+        462277893,
+        4312899588,
+        147060850
+      ],
+      "tags": {
+        "cyclestreet": "yes",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Parklaan",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 40674572,
+      "nodes": [
+        5167537135,
+        5167537136,
+        5167537141,
+        5167537139,
+        5167537138
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Leide",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 140830533,
+      "nodes": [
+        250045006,
+        250045007,
+        1630624542,
+        250045008
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Poststraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 140831216,
+      "nodes": [
+        250046211,
+        147060805,
+        147060810,
+        1630624554,
+        3286018378,
+        250045027
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Louis Theunckenstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 140832150,
+      "nodes": [
+        250046011,
+        3910303569,
+        3910303446,
+        250046211
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Oudstrijdersplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 140837129,
+      "nodes": [
+        2301820956,
+        250046285,
+        5801723708
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Vuurkruisenstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 150145506,
+      "nodes": [
+        249925939,
+        2301820557,
+        5039884159,
+        250056718
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Vandenpeereboomstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 221123679,
+      "nodes": [
+        4319821705,
+        5844009610,
+        5215668385,
+        147060832,
+        5215668381,
+        147060828,
+        1630624518,
+        1630624516,
+        5215668380,
+        147060826,
+        4319826890,
+        1630624525,
+        3286018374,
+        147060821,
+        3908315968,
+        1630624535,
+        3908316019,
+        147060815
+      ],
+      "tags": {
+        "cycleway:left": "opposite_lane",
+        "cycleway:right": "lane",
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Arkenvest",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 221123763,
+      "nodes": [
+        462257172,
+        147060790
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Oudstrijdersplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 258377618,
+      "nodes": [
+        2637434694,
+        250046292
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Joseph Possozplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 258377628,
+      "nodes": [
+        250046292,
+        250046291,
+        250046290,
+        4599486448,
+        250046289,
+        4354154178,
+        906793378,
+        250046288,
+        4599486449,
+        250046287,
+        2301820971,
+        250046286,
+        906793362,
+        2301820956
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Vuurkruisenstraat",
+        "oneway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 283436370,
+      "nodes": [
+        147057641,
+        147057646,
+        4534630898,
+        147057627,
+        147060936
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Brusselsesteenweg",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 285400812,
+      "nodes": [
+        2890943926,
+        5548416846,
+        250046576
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Kolveniersstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 321822423,
+      "nodes": [
+        3285920575,
+        3910303582,
+        3908332195,
+        250045957
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Zuster Bernardastraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 430775996,
+      "nodes": [
+        4300440897,
+        4300440898,
+        5548424355,
+        4300440899
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Beestenmarkt",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 444875355,
+      "nodes": [
+        3908315978,
+        5190922178,
+        5186317386,
+        4423371354,
+        4945666246,
+        5186317388,
+        4423378411
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "20",
+        "name": "Groebegrachtstraat",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 466380660,
+      "nodes": [
+        147057607,
+        4811585161
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Slachthuisstraat",
+        "oneway": "no",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 488872295,
+      "nodes": [
+        4811585161,
+        4031402789,
+        147060790
+      ],
+      "tags": {
+        "highway": "living_street",
+        "maxspeed": "20",
+        "name": "Slachthuisstraat",
+        "oneway": "no",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 532551888,
+      "nodes": [
+        147060862,
+        147060866,
+        147060868,
+        147060870,
+        1630624577,
+        4212045122,
+        147060872,
+        1630624584,
+        147060874,
+        147060875,
+        4534630894,
+        147060877
+      ],
+      "tags": {
+        "cycleway": "lane",
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Leide"
+      }
+    },
+    {
+      "type": "way",
+      "id": 532551890,
+      "nodes": [
+        5167537138,
+        5167537140,
+        5167537137,
+        5167537142
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Leide",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 533757616,
+      "nodes": [
+        462252827,
+        3908332211,
+        250045139
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Joseph Possozplein"
+      }
+    },
+    {
+      "type": "way",
+      "id": 552453985,
+      "nodes": [
+        4300440899,
+        5548424356,
+        250044889,
+        4357101576,
+        250044888,
+        250044887
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Volpestraat",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 579360114,
+      "nodes": [
+        250044887,
+        250044886,
+        250044885,
+        5086271769,
+        147060796
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Volpestraat",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 580599059,
+      "nodes": [
+        147060850,
+        5167537135
+      ],
+      "tags": {
+        "cyclestreet": "yes",
+        "cycleway": "lane",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Parklaan",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 580599060,
+      "nodes": [
+        5167537135,
+        462255341
+      ],
+      "tags": {
+        "cyclestreet": "yes",
+        "cycleway": "lane",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Parklaan",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 580599061,
+      "nodes": [
+        5167537138,
+        147060862
+      ],
+      "tags": {
+        "cycleway": "lane",
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Leide"
+      }
+    },
+    {
+      "type": "way",
+      "id": 613056150,
+      "nodes": [
+        462277968,
+        462277972
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Vuurkruisenstraat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 619726535,
+      "nodes": [
+        5856080652,
+        462277964,
+        3286018375,
+        147060815
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Molenborre",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 650971255,
+      "nodes": [
+        250046211,
+        250046212
+      ],
+      "tags": {
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Oudstrijdersplein",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "surface": "sett"
+      }
+    },
+    {
+      "type": "way",
+      "id": 650971256,
+      "nodes": [
+        250046213,
+        250046011
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Oudstrijdersplein",
+        "oneway": "yes",
+        "oneway:bicycle": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 147060805,
+      "lat": 50.7342653,
+      "lon": 4.2333097
+    },
+    {
+      "type": "node",
+      "id": 147060810,
+      "lat": 50.7340896,
+      "lon": 4.2332227
+    },
+    {
+      "type": "node",
+      "id": 147060814,
+      "lat": 50.7336623,
+      "lon": 4.23345
+    },
+    {
+      "type": "node",
+      "id": 250045005,
+      "lat": 50.7345258,
+      "lon": 4.2317163
+    },
+    {
+      "type": "node",
+      "id": 250045006,
+      "lat": 50.7343655,
+      "lon": 4.2318981
+    },
+    {
+      "type": "node",
+      "id": 250045007,
+      "lat": 50.73391,
+      "lon": 4.2321641
+    },
+    {
+      "type": "node",
+      "id": 250045008,
+      "lat": 50.73322,
+      "lon": 4.2326684
+    },
+    {
+      "type": "node",
+      "id": 250045027,
+      "lat": 50.7337698,
+      "lon": 4.2333485
+    },
+    {
+      "type": "node",
+      "id": 250046211,
+      "lat": 50.7344683,
+      "lon": 4.2334124
+    },
+    {
+      "type": "node",
+      "id": 250046212,
+      "lat": 50.7345581,
+      "lon": 4.2329405
+    },
+    {
+      "type": "node",
+      "id": 462277971,
+      "lat": 50.7335007,
+      "lon": 4.2335906
+    },
+    {
+      "type": "node",
+      "id": 1630624542,
+      "lat": 50.733336,
+      "lon": 4.2325074
+    },
+    {
+      "type": "node",
+      "id": 1630624551,
+      "lat": 50.7336438,
+      "lon": 4.2331473
+    },
+    {
+      "type": "node",
+      "id": 1630624554,
+      "lat": 50.7339321,
+      "lon": 4.2331836
+    },
+    {
+      "type": "node",
+      "id": 2301820577,
+      "lat": 50.732731,
+      "lon": 4.2322326
+    },
+    {
+      "type": "node",
+      "id": 2301820579,
+      "lat": 50.7327934,
+      "lon": 4.2322696
+    },
+    {
+      "type": "node",
+      "id": 2301820602,
+      "lat": 50.7334189,
+      "lon": 4.2328931
+    },
+    {
+      "type": "node",
+      "id": 3286018376,
+      "lat": 50.7337117,
+      "lon": 4.2332556
+    },
+    {
+      "type": "node",
+      "id": 3286018377,
+      "lat": 50.7337358,
+      "lon": 4.2333806
+    },
+    {
+      "type": "node",
+      "id": 3286018378,
+      "lat": 50.7338276,
+      "lon": 4.2333191
+    },
+    {
+      "type": "node",
+      "id": 3286018379,
+      "lat": 50.7338306,
+      "lon": 4.2334813
+    },
+    {
+      "type": "node",
+      "id": 3908315978,
+      "lat": 50.7324041,
+      "lon": 4.2329931
+    },
+    {
+      "type": "node",
+      "id": 3910303446,
+      "lat": 50.7345956,
+      "lon": 4.2334747
+    },
+    {
+      "type": "node",
+      "id": 3910303569,
+      "lat": 50.7346909,
+      "lon": 4.2335215
+    },
+    {
+      "type": "node",
+      "id": 4423371354,
+      "lat": 50.7325732,
+      "lon": 4.233194
+    },
+    {
+      "type": "node",
+      "id": 4945666246,
+      "lat": 50.7327145,
+      "lon": 4.2333249
+    },
+    {
+      "type": "node",
+      "id": 4945666252,
+      "lat": 50.7328334,
+      "lon": 4.232307
+    },
+    {
+      "type": "node",
+      "id": 5186317386,
+      "lat": 50.7325423,
+      "lon": 4.2331573
+    },
+    {
+      "type": "node",
+      "id": 5190922178,
+      "lat": 50.7324921,
+      "lon": 4.2330977
+    },
+    {
+      "type": "node",
+      "id": 5372707153,
+      "lat": 50.7327466,
+      "lon": 4.2322419
+    },
+    {
+      "type": "node",
+      "id": 147057607,
+      "lat": 50.7355526,
+      "lon": 4.2335114
+    },
+    {
+      "type": "node",
+      "id": 147060790,
+      "lat": 50.7348638,
+      "lon": 4.2332801
+    },
+    {
+      "type": "node",
+      "id": 250045955,
+      "lat": 50.7347447,
+      "lon": 4.2320103
+    },
+    {
+      "type": "node",
+      "id": 250045956,
+      "lat": 50.735366,
+      "lon": 4.2326899
+    },
+    {
+      "type": "node",
+      "id": 250045957,
+      "lat": 50.7358335,
+      "lon": 4.2329598
+    },
+    {
+      "type": "node",
+      "id": 250046006,
+      "lat": 50.7352847,
+      "lon": 4.2326328
+    },
+    {
+      "type": "node",
+      "id": 250046011,
+      "lat": 50.7348008,
+      "lon": 4.2335753
+    },
+    {
+      "type": "node",
+      "id": 462257172,
+      "lat": 50.7348995,
+      "lon": 4.2331113
+    },
+    {
+      "type": "node",
+      "id": 3285920575,
+      "lat": 50.736733,
+      "lon": 4.2319654
+    },
+    {
+      "type": "node",
+      "id": 3908332195,
+      "lat": 50.7360532,
+      "lon": 4.2327178
+    },
+    {
+      "type": "node",
+      "id": 3910303573,
+      "lat": 50.7356194,
+      "lon": 4.2333741
+    },
+    {
+      "type": "node",
+      "id": 3910303582,
+      "lat": 50.7363572,
+      "lon": 4.2323813
+    },
+    {
+      "type": "node",
+      "id": 4031402789,
+      "lat": 50.7350809,
+      "lon": 4.233353
+    },
+    {
+      "type": "node",
+      "id": 4811585161,
+      "lat": 50.7351063,
+      "lon": 4.2333615
+    },
+    {
+      "type": "node",
+      "id": 147060815,
+      "lat": 50.7332868,
+      "lon": 4.2338076
+    },
+    {
+      "type": "node",
+      "id": 147060821,
+      "lat": 50.733045,
+      "lon": 4.2343501
+    },
+    {
+      "type": "node",
+      "id": 147060826,
+      "lat": 50.7328432,
+      "lon": 4.235403
+    },
+    {
+      "type": "node",
+      "id": 147060828,
+      "lat": 50.7329134,
+      "lon": 4.2362621
+    },
+    {
+      "type": "node",
+      "id": 147060832,
+      "lat": 50.7329768,
+      "lon": 4.2365176
+    },
+    {
+      "type": "node",
+      "id": 147060841,
+      "lat": 50.7333269,
+      "lon": 4.2371851
+    },
+    {
+      "type": "node",
+      "id": 147060845,
+      "lat": 50.7336362,
+      "lon": 4.2376112
+    },
+    {
+      "type": "node",
+      "id": 147060847,
+      "lat": 50.7341924,
+      "lon": 4.2382772
+    },
+    {
+      "type": "node",
+      "id": 147060850,
+      "lat": 50.7346885,
+      "lon": 4.2389384
+    },
+    {
+      "type": "node",
+      "id": 147070989,
+      "lat": 50.7326184,
+      "lon": 4.2372829
+    },
+    {
+      "type": "node",
+      "id": 147070992,
+      "lat": 50.7322729,
+      "lon": 4.237736
+    },
+    {
+      "type": "node",
+      "id": 249925939,
+      "lat": 50.731964,
+      "lon": 4.2387228
+    },
+    {
+      "type": "node",
+      "id": 250044873,
+      "lat": 50.7343523,
+      "lon": 4.234949
+    },
+    {
+      "type": "node",
+      "id": 250044874,
+      "lat": 50.7342968,
+      "lon": 4.2350142
+    },
+    {
+      "type": "node",
+      "id": 250045061,
+      "lat": 50.7339964,
+      "lon": 4.2338437
+    },
+    {
+      "type": "node",
+      "id": 250045459,
+      "lat": 50.7324079,
+      "lon": 4.237931
+    },
+    {
+      "type": "node",
+      "id": 250045460,
+      "lat": 50.7332712,
+      "lon": 4.2389209
+    },
+    {
+      "type": "node",
+      "id": 250045841,
+      "lat": 50.7325373,
+      "lon": 4.2373642
+    },
+    {
+      "type": "node",
+      "id": 250046210,
+      "lat": 50.7343957,
+      "lon": 4.2338912
+    },
+    {
+      "type": "node",
+      "id": 250046222,
+      "lat": 50.7341159,
+      "lon": 4.2342396
+    },
+    {
+      "type": "node",
+      "id": 250046285,
+      "lat": 50.7342277,
+      "lon": 4.2363975
+    },
+    {
+      "type": "node",
+      "id": 250046286,
+      "lat": 50.734408,
+      "lon": 4.2369703
+    },
+    {
+      "type": "node",
+      "id": 250046287,
+      "lat": 50.7344913,
+      "lon": 4.2371253
+    },
+    {
+      "type": "node",
+      "id": 250046288,
+      "lat": 50.7346238,
+      "lon": 4.2372185
+    },
+    {
+      "type": "node",
+      "id": 250056718,
+      "lat": 50.7328109,
+      "lon": 4.2397841
+    },
+    {
+      "type": "node",
+      "id": 462277893,
+      "lat": 50.7342854,
+      "lon": 4.2383944
+    },
+    {
+      "type": "node",
+      "id": 462277964,
+      "lat": 50.7334738,
+      "lon": 4.2342601
+    },
+    {
+      "type": "node",
+      "id": 462277965,
+      "lat": 50.7340381,
+      "lon": 4.2345912
+    },
+    {
+      "type": "node",
+      "id": 462277966,
+      "lat": 50.7340652,
+      "lon": 4.234764
+    },
+    {
+      "type": "node",
+      "id": 462277968,
+      "lat": 50.7340137,
+      "lon": 4.2353247
+    },
+    {
+      "type": "node",
+      "id": 462277972,
+      "lat": 50.7340432,
+      "lon": 4.2350219
+    },
+    {
+      "type": "node",
+      "id": 462278034,
+      "lat": 50.7337619,
+      "lon": 4.2352496
+    },
+    {
+      "type": "node",
+      "id": 462278035,
+      "lat": 50.7335375,
+      "lon": 4.2355053
+    },
+    {
+      "type": "node",
+      "id": 462278037,
+      "lat": 50.7337477,
+      "lon": 4.2361577
+    },
+    {
+      "type": "node",
+      "id": 472464162,
+      "lat": 50.7321087,
+      "lon": 4.2382257
+    },
+    {
+      "type": "node",
+      "id": 472464164,
+      "lat": 50.7323166,
+      "lon": 4.2383846
+    },
+    {
+      "type": "node",
+      "id": 472464166,
+      "lat": 50.7329896,
+      "lon": 4.2391313
+    },
+    {
+      "type": "node",
+      "id": 489447472,
+      "lat": 50.7329777,
+      "lon": 4.2369064
+    },
+    {
+      "type": "node",
+      "id": 906793362,
+      "lat": 50.7343451,
+      "lon": 4.2367801
+    },
+    {
+      "type": "node",
+      "id": 1630624516,
+      "lat": 50.7328554,
+      "lon": 4.2358988
+    },
+    {
+      "type": "node",
+      "id": 1630624518,
+      "lat": 50.7328651,
+      "lon": 4.2359879
+    },
+    {
+      "type": "node",
+      "id": 1630624525,
+      "lat": 50.7328708,
+      "lon": 4.235117
+    },
+    {
+      "type": "node",
+      "id": 1630624535,
+      "lat": 50.733146,
+      "lon": 4.2340564
+    },
+    {
+      "type": "node",
+      "id": 2301820557,
+      "lat": 50.7320335,
+      "lon": 4.2388116
+    },
+    {
+      "type": "node",
+      "id": 2301820567,
+      "lat": 50.7321537,
+      "lon": 4.2382275
+    },
+    {
+      "type": "node",
+      "id": 2301820571,
+      "lat": 50.7323106,
+      "lon": 4.2377841
+    },
+    {
+      "type": "node",
+      "id": 2301820574,
+      "lat": 50.7323321,
+      "lon": 4.2378189
+    },
+    {
+      "type": "node",
+      "id": 2301820576,
+      "lat": 50.7323637,
+      "lon": 4.2375994
+    },
+    {
+      "type": "node",
+      "id": 2301820826,
+      "lat": 50.7339686,
+      "lon": 4.2345352
+    },
+    {
+      "type": "node",
+      "id": 2301820951,
+      "lat": 50.7342577,
+      "lon": 4.2350516
+    },
+    {
+      "type": "node",
+      "id": 2301820952,
+      "lat": 50.7342873,
+      "lon": 4.2348347
+    },
+    {
+      "type": "node",
+      "id": 2301820956,
+      "lat": 50.7343054,
+      "lon": 4.2366704
+    },
+    {
+      "type": "node",
+      "id": 2301820971,
+      "lat": 50.7344425,
+      "lon": 4.2370498
+    },
+    {
+      "type": "node",
+      "id": 3220248685,
+      "lat": 50.732292,
+      "lon": 4.2377604
+    },
+    {
+      "type": "node",
+      "id": 3286018372,
+      "lat": 50.7327715,
+      "lon": 4.2371098
+    },
+    {
+      "type": "node",
+      "id": 3286018373,
+      "lat": 50.7327739,
+      "lon": 4.2371073
+    },
+    {
+      "type": "node",
+      "id": 3286018374,
+      "lat": 50.7330377,
+      "lon": 4.2343794
+    },
+    {
+      "type": "node",
+      "id": 3286018375,
+      "lat": 50.7333327,
+      "lon": 4.2339021
+    },
+    {
+      "type": "node",
+      "id": 3908315968,
+      "lat": 50.733055,
+      "lon": 4.2343211
+    },
+    {
+      "type": "node",
+      "id": 3908316019,
+      "lat": 50.7332521,
+      "lon": 4.2338423
+    },
+    {
+      "type": "node",
+      "id": 4004775274,
+      "lat": 50.7337108,
+      "lon": 4.2377006
+    },
+    {
+      "type": "node",
+      "id": 4004778889,
+      "lat": 50.7328394,
+      "lon": 4.2370427
+    },
+    {
+      "type": "node",
+      "id": 4256103061,
+      "lat": 50.732991,
+      "lon": 4.2368634
+    },
+    {
+      "type": "node",
+      "id": 4256103067,
+      "lat": 50.7327421,
+      "lon": 4.237143
+    },
+    {
+      "type": "node",
+      "id": 4286657220,
+      "lat": 50.7331672,
+      "lon": 4.2388015
+    },
+    {
+      "type": "node",
+      "id": 4286657222,
+      "lat": 50.7322365,
+      "lon": 4.2383074
+    },
+    {
+      "type": "node",
+      "id": 4312899588,
+      "lat": 50.7343293,
+      "lon": 4.2384512
+    },
+    {
+      "type": "node",
+      "id": 4319821702,
+      "lat": 50.7328656,
+      "lon": 4.2370169
+    },
+    {
+      "type": "node",
+      "id": 4319821705,
+      "lat": 50.7330074,
+      "lon": 4.2368077
+    },
+    {
+      "type": "node",
+      "id": 4319826890,
+      "lat": 50.732854,
+      "lon": 4.2352473
+    },
+    {
+      "type": "node",
+      "id": 4354154163,
+      "lat": 50.7336613,
+      "lon": 4.2343357
+    },
+    {
+      "type": "node",
+      "id": 4354154164,
+      "lat": 50.7337213,
+      "lon": 4.2344418
+    },
+    {
+      "type": "node",
+      "id": 4354154165,
+      "lat": 50.733882,
+      "lon": 4.2345068
+    },
+    {
+      "type": "node",
+      "id": 4354154166,
+      "lat": 50.7340651,
+      "lon": 4.2346705
+    },
+    {
+      "type": "node",
+      "id": 4423378411,
+      "lat": 50.7325846,
+      "lon": 4.2340972
+    },
+    {
+      "type": "node",
+      "id": 4599486444,
+      "lat": 50.7336493,
+      "lon": 4.235743
+    },
+    {
+      "type": "node",
+      "id": 4599486445,
+      "lat": 50.7340635,
+      "lon": 4.23403
+    },
+    {
+      "type": "node",
+      "id": 4599486449,
+      "lat": 50.7345524,
+      "lon": 4.237188
+    },
+    {
+      "type": "node",
+      "id": 4813092011,
+      "lat": 50.7325987,
+      "lon": 4.2373027
+    },
+    {
+      "type": "node",
+      "id": 5039884159,
+      "lat": 50.7326952,
+      "lon": 4.2396432
+    },
+    {
+      "type": "node",
+      "id": 5186317388,
+      "lat": 50.7326033,
+      "lon": 4.2339599
+    },
+    {
+      "type": "node",
+      "id": 5186475746,
+      "lat": 50.7336287,
+      "lon": 4.2343226
+    },
+    {
+      "type": "node",
+      "id": 5215668380,
+      "lat": 50.7328446,
+      "lon": 4.235667
+    },
+    {
+      "type": "node",
+      "id": 5215668381,
+      "lat": 50.7329438,
+      "lon": 4.2363637
+    },
+    {
+      "type": "node",
+      "id": 5215668383,
+      "lat": 50.7332346,
+      "lon": 4.2370624
+    },
+    {
+      "type": "node",
+      "id": 5215668384,
+      "lat": 50.7330837,
+      "lon": 4.2368284
+    },
+    {
+      "type": "node",
+      "id": 5215668385,
+      "lat": 50.7330127,
+      "lon": 4.2366977
+    },
+    {
+      "type": "node",
+      "id": 5801723708,
+      "lat": 50.7341587,
+      "lon": 4.2360889
+    },
+    {
+      "type": "node",
+      "id": 5844009610,
+      "lat": 50.733011,
+      "lon": 4.2367331
+    },
+    {
+      "type": "node",
+      "id": 5856080652,
+      "lat": 50.7335513,
+      "lon": 4.2342913
+    },
+    {
+      "type": "node",
+      "id": 472464168,
+      "lat": 50.7340465,
+      "lon": 4.2403131
+    },
+    {
+      "type": "node",
+      "id": 2617871513,
+      "lat": 50.7345295,
+      "lon": 4.2403061
+    },
+    {
+      "type": "node",
+      "id": 146707718,
+      "lat": 50.7381634,
+      "lon": 4.2337097
+    },
+    {
+      "type": "node",
+      "id": 147057587,
+      "lat": 50.7371696,
+      "lon": 4.2351527
+    },
+    {
+      "type": "node",
+      "id": 147057593,
+      "lat": 50.7367392,
+      "lon": 4.2356026
+    },
+    {
+      "type": "node",
+      "id": 147057599,
+      "lat": 50.7368058,
+      "lon": 4.2345698
+    },
+    {
+      "type": "node",
+      "id": 147057603,
+      "lat": 50.7365133,
+      "lon": 4.2342013
+    },
+    {
+      "type": "node",
+      "id": 147057605,
+      "lat": 50.7362464,
+      "lon": 4.233996
+    },
+    {
+      "type": "node",
+      "id": 147057610,
+      "lat": 50.7374144,
+      "lon": 4.2356103
+    },
+    {
+      "type": "node",
+      "id": 147057615,
+      "lat": 50.737672,
+      "lon": 4.23623
+    },
+    {
+      "type": "node",
+      "id": 147057619,
+      "lat": 50.7377834,
+      "lon": 4.23653
+    },
+    {
+      "type": "node",
+      "id": 147057623,
+      "lat": 50.7377092,
+      "lon": 4.2375446
+    },
+    {
+      "type": "node",
+      "id": 147057627,
+      "lat": 50.7376489,
+      "lon": 4.2377683
+    },
+    {
+      "type": "node",
+      "id": 147057631,
+      "lat": 50.7368872,
+      "lon": 4.2358862
+    },
+    {
+      "type": "node",
+      "id": 147057635,
+      "lat": 50.7370461,
+      "lon": 4.2362699
+    },
+    {
+      "type": "node",
+      "id": 147057638,
+      "lat": 50.7372198,
+      "lon": 4.2368116
+    },
+    {
+      "type": "node",
+      "id": 147057641,
+      "lat": 50.737338,
+      "lon": 4.2373155
+    },
+    {
+      "type": "node",
+      "id": 147057646,
+      "lat": 50.7374053,
+      "lon": 4.2374954
+    },
+    {
+      "type": "node",
+      "id": 147060796,
+      "lat": 50.7354668,
+      "lon": 4.2338872
+    },
+    {
+      "type": "node",
+      "id": 147060802,
+      "lat": 50.7349426,
+      "lon": 4.233644
+    },
+    {
+      "type": "node",
+      "id": 147060862,
+      "lat": 50.7348387,
+      "lon": 4.2395327
+    },
+    {
+      "type": "node",
+      "id": 147060866,
+      "lat": 50.7350434,
+      "lon": 4.2397171
+    },
+    {
+      "type": "node",
+      "id": 147060868,
+      "lat": 50.7354498,
+      "lon": 4.2400844
+    },
+    {
+      "type": "node",
+      "id": 147060877,
+      "lat": 50.7367061,
+      "lon": 4.2401269
+    },
+    {
+      "type": "node",
+      "id": 147060898,
+      "lat": 50.7367356,
+      "lon": 4.2399025
+    },
+    {
+      "type": "node",
+      "id": 147060906,
+      "lat": 50.7368754,
+      "lon": 4.2398765
+    },
+    {
+      "type": "node",
+      "id": 147060921,
+      "lat": 50.7370743,
+      "lon": 4.2393714
+    },
+    {
+      "type": "node",
+      "id": 147060936,
+      "lat": 50.7377131,
+      "lon": 4.2378009
+    },
+    {
+      "type": "node",
+      "id": 147070964,
+      "lat": 50.7350725,
+      "lon": 4.2358744
+    },
+    {
+      "type": "node",
+      "id": 250044885,
+      "lat": 50.7356071,
+      "lon": 4.2341837
+    },
+    {
+      "type": "node",
+      "id": 250044886,
+      "lat": 50.7357466,
+      "lon": 4.2345365
+    },
+    {
+      "type": "node",
+      "id": 250044887,
+      "lat": 50.7358131,
+      "lon": 4.2348605
+    },
+    {
+      "type": "node",
+      "id": 250044888,
+      "lat": 50.7358817,
+      "lon": 4.2353669
+    },
+    {
+      "type": "node",
+      "id": 250044889,
+      "lat": 50.7359486,
+      "lon": 4.23588
+    },
+    {
+      "type": "node",
+      "id": 250045066,
+      "lat": 50.7358512,
+      "lon": 4.2373974
+    },
+    {
+      "type": "node",
+      "id": 250045139,
+      "lat": 50.7358895,
+      "lon": 4.2382241
+    },
+    {
+      "type": "node",
+      "id": 250046213,
+      "lat": 50.7347161,
+      "lon": 4.2340474
+    },
+    {
+      "type": "node",
+      "id": 250046221,
+      "lat": 50.7348083,
+      "lon": 4.2344247
+    },
+    {
+      "type": "node",
+      "id": 250046289,
+      "lat": 50.7349218,
+      "lon": 4.2372396
+    },
+    {
+      "type": "node",
+      "id": 250046290,
+      "lat": 50.7351779,
+      "lon": 4.2372815
+    },
+    {
+      "type": "node",
+      "id": 250046291,
+      "lat": 50.7352659,
+      "lon": 4.2373759
+    },
+    {
+      "type": "node",
+      "id": 250046292,
+      "lat": 50.7354977,
+      "lon": 4.2379025
+    },
+    {
+      "type": "node",
+      "id": 250046293,
+      "lat": 50.7356869,
+      "lon": 4.2383379
+    },
+    {
+      "type": "node",
+      "id": 250046573,
+      "lat": 50.7357698,
+      "lon": 4.2385067
+    },
+    {
+      "type": "node",
+      "id": 250046574,
+      "lat": 50.7356125,
+      "lon": 4.2387421
+    },
+    {
+      "type": "node",
+      "id": 250046575,
+      "lat": 50.7353919,
+      "lon": 4.2388246
+    },
+    {
+      "type": "node",
+      "id": 250046576,
+      "lat": 50.7350959,
+      "lon": 4.2389266
+    },
+    {
+      "type": "node",
+      "id": 380276161,
+      "lat": 50.7357597,
+      "lon": 4.2375804
+    },
+    {
+      "type": "node",
+      "id": 462252470,
+      "lat": 50.7371507,
+      "lon": 4.2366031
+    },
+    {
+      "type": "node",
+      "id": 462252822,
+      "lat": 50.736053,
+      "lon": 4.2378034
+    },
+    {
+      "type": "node",
+      "id": 462252824,
+      "lat": 50.7361565,
+      "lon": 4.2379972
+    },
+    {
+      "type": "node",
+      "id": 462252825,
+      "lat": 50.7362522,
+      "lon": 4.2383062
+    },
+    {
+      "type": "node",
+      "id": 462252826,
+      "lat": 50.7363038,
+      "lon": 4.2385362
+    },
+    {
+      "type": "node",
+      "id": 462252827,
+      "lat": 50.7361754,
+      "lon": 4.2388027
+    },
+    {
+      "type": "node",
+      "id": 462255289,
+      "lat": 50.734963,
+      "lon": 4.2390638
+    },
+    {
+      "type": "node",
+      "id": 462255341,
+      "lat": 50.7347612,
+      "lon": 4.2390919
+    },
+    {
+      "type": "node",
+      "id": 462255349,
+      "lat": 50.7348242,
+      "lon": 4.2391217
+    },
+    {
+      "type": "node",
+      "id": 462255382,
+      "lat": 50.7347627,
+      "lon": 4.2388613
+    },
+    {
+      "type": "node",
+      "id": 462255401,
+      "lat": 50.7349412,
+      "lon": 4.2390929
+    },
+    {
+      "type": "node",
+      "id": 462276973,
+      "lat": 50.7351322,
+      "lon": 4.2357225
+    },
+    {
+      "type": "node",
+      "id": 462277891,
+      "lat": 50.7348508,
+      "lon": 4.2387179
+    },
+    {
+      "type": "node",
+      "id": 906793357,
+      "lat": 50.7372377,
+      "lon": 4.238945
+    },
+    {
+      "type": "node",
+      "id": 906793364,
+      "lat": 50.7374396,
+      "lon": 4.2384544
+    },
+    {
+      "type": "node",
+      "id": 906793372,
+      "lat": 50.7369663,
+      "lon": 4.2396333
+    },
+    {
+      "type": "node",
+      "id": 906793373,
+      "lat": 50.7371482,
+      "lon": 4.2391772
+    },
+    {
+      "type": "node",
+      "id": 906793378,
+      "lat": 50.7347285,
+      "lon": 4.2372337
+    },
+    {
+      "type": "node",
+      "id": 2637434694,
+      "lat": 50.7356252,
+      "lon": 4.2381958
+    },
+    {
+      "type": "node",
+      "id": 2889046450,
+      "lat": 50.7357931,
+      "lon": 4.2374832
+    },
+    {
+      "type": "node",
+      "id": 2890915463,
+      "lat": 50.7362808,
+      "lon": 4.2389986
+    },
+    {
+      "type": "node",
+      "id": 2890943926,
+      "lat": 50.7348931,
+      "lon": 4.2386638
+    },
+    {
+      "type": "node",
+      "id": 3257418530,
+      "lat": 50.7372044,
+      "lon": 4.2390315
+    },
+    {
+      "type": "node",
+      "id": 3257418553,
+      "lat": 50.7375408,
+      "lon": 4.2359266
+    },
+    {
+      "type": "node",
+      "id": 3286018380,
+      "lat": 50.7354803,
+      "lon": 4.2338081
+    },
+    {
+      "type": "node",
+      "id": 3880705746,
+      "lat": 50.7360649,
+      "lon": 4.2377695
+    },
+    {
+      "type": "node",
+      "id": 3908332179,
+      "lat": 50.7362621,
+      "lon": 4.2386228
+    },
+    {
+      "type": "node",
+      "id": 3908332188,
+      "lat": 50.735803,
+      "lon": 4.2384284
+    },
+    {
+      "type": "node",
+      "id": 3908332205,
+      "lat": 50.735728,
+      "lon": 4.2385693
+    },
+    {
+      "type": "node",
+      "id": 3908332207,
+      "lat": 50.735646,
+      "lon": 4.2386919
+    },
+    {
+      "type": "node",
+      "id": 3908332211,
+      "lat": 50.7361306,
+      "lon": 4.2387119
+    },
+    {
+      "type": "node",
+      "id": 3908332212,
+      "lat": 50.735659,
+      "lon": 4.2377042
+    },
+    {
+      "type": "node",
+      "id": 3908332224,
+      "lat": 50.7372592,
+      "lon": 4.2352669
+    },
+    {
+      "type": "node",
+      "id": 3908332227,
+      "lat": 50.7380409,
+      "lon": 4.2338876
+    },
+    {
+      "type": "node",
+      "id": 3908332241,
+      "lat": 50.7359684,
+      "lon": 4.2379972
+    },
+    {
+      "type": "node",
+      "id": 3908332246,
+      "lat": 50.7366532,
+      "lon": 4.234361
+    },
+    {
+      "type": "node",
+      "id": 3908332776,
+      "lat": 50.735847,
+      "lon": 4.2383245
+    },
+    {
+      "type": "node",
+      "id": 3908332792,
+      "lat": 50.7359086,
+      "lon": 4.2381691
+    },
+    {
+      "type": "node",
+      "id": 3908332802,
+      "lat": 50.7357469,
+      "lon": 4.2375961
+    },
+    {
+      "type": "node",
+      "id": 3908332810,
+      "lat": 50.7355703,
+      "lon": 4.2378133
+    },
+    {
+      "type": "node",
+      "id": 3908332813,
+      "lat": 50.7360028,
+      "lon": 4.2378984
+    },
+    {
+      "type": "node",
+      "id": 4300440897,
+      "lat": 50.7363824,
+      "lon": 4.2359565
+    },
+    {
+      "type": "node",
+      "id": 4300440898,
+      "lat": 50.7362972,
+      "lon": 4.2359452
+    },
+    {
+      "type": "node",
+      "id": 4300440899,
+      "lat": 50.7360466,
+      "lon": 4.2360883
+    },
+    {
+      "type": "node",
+      "id": 4354154178,
+      "lat": 50.7348002,
+      "lon": 4.2372317
+    },
+    {
+      "type": "node",
+      "id": 4357101576,
+      "lat": 50.7359237,
+      "lon": 4.2357549
+    },
+    {
+      "type": "node",
+      "id": 4534630893,
+      "lat": 50.7366844,
+      "lon": 4.2397906
+    },
+    {
+      "type": "node",
+      "id": 4534630896,
+      "lat": 50.736938,
+      "lon": 4.2397025
+    },
+    {
+      "type": "node",
+      "id": 4534630898,
+      "lat": 50.7375021,
+      "lon": 4.2376482
+    },
+    {
+      "type": "node",
+      "id": 4599486448,
+      "lat": 50.7350681,
+      "lon": 4.2372378
+    },
+    {
+      "type": "node",
+      "id": 4732311083,
+      "lat": 50.7354922,
+      "lon": 4.2352553
+    },
+    {
+      "type": "node",
+      "id": 4945666250,
+      "lat": 50.7353856,
+      "lon": 4.2338498
+    },
+    {
+      "type": "node",
+      "id": 4945666251,
+      "lat": 50.7353619,
+      "lon": 4.2338884
+    },
+    {
+      "type": "node",
+      "id": 5086271769,
+      "lat": 50.7354955,
+      "lon": 4.233906
+    },
+    {
+      "type": "node",
+      "id": 5167537135,
+      "lat": 50.7347209,
+      "lon": 4.2390524
+    },
+    {
+      "type": "node",
+      "id": 5167537136,
+      "lat": 50.7347207,
+      "lon": 4.2392154
+    },
+    {
+      "type": "node",
+      "id": 5167537137,
+      "lat": 50.7347963,
+      "lon": 4.2392144
+    },
+    {
+      "type": "node",
+      "id": 5167537138,
+      "lat": 50.7348023,
+      "lon": 4.2394815
+    },
+    {
+      "type": "node",
+      "id": 5167537139,
+      "lat": 50.7347793,
+      "lon": 4.2394491
+    },
+    {
+      "type": "node",
+      "id": 5167537140,
+      "lat": 50.7348,
+      "lon": 4.2393536
+    },
+    {
+      "type": "node",
+      "id": 5167537141,
+      "lat": 50.7347208,
+      "lon": 4.2393089
+    },
+    {
+      "type": "node",
+      "id": 5167537142,
+      "lat": 50.7348,
+      "lon": 4.2391102
+    },
+    {
+      "type": "node",
+      "id": 5548416846,
+      "lat": 50.7350702,
+      "lon": 4.2388845
+    },
+    {
+      "type": "node",
+      "id": 5548424355,
+      "lat": 50.7361153,
+      "lon": 4.2360757
+    },
+    {
+      "type": "node",
+      "id": 5548424356,
+      "lat": 50.7359981,
+      "lon": 4.2360386
+    },
+    {
+      "type": "node",
+      "id": 5548424357,
+      "lat": 50.7364801,
+      "lon": 4.2358901
+    },
+    {
+      "type": "node",
+      "id": 5619008157,
+      "lat": 50.7365728,
+      "lon": 4.2357872
+    },
+    {
+      "type": "node",
+      "id": 5619008164,
+      "lat": 50.7364948,
+      "lon": 4.2341871
+    },
+    {
+      "type": "node",
+      "id": 6105450867,
+      "lat": 50.7347457,
+      "lon": 4.2340897
+    },
+    {
+      "type": "node",
+      "id": 6258181614,
+      "lat": 50.7372044,
+      "lon": 4.236757
+    },
+    {
+      "type": "node",
+      "id": 147060870,
+      "lat": 50.7357646,
+      "lon": 4.2403603
+    },
+    {
+      "type": "node",
+      "id": 147060872,
+      "lat": 50.7360793,
+      "lon": 4.2404822
+    },
+    {
+      "type": "node",
+      "id": 147060874,
+      "lat": 50.7363107,
+      "lon": 4.2404243
+    },
+    {
+      "type": "node",
+      "id": 147060875,
+      "lat": 50.7365482,
+      "lon": 4.2402458
+    },
+    {
+      "type": "node",
+      "id": 1630624577,
+      "lat": 50.7359188,
+      "lon": 4.2404405
+    },
+    {
+      "type": "node",
+      "id": 1630624584,
+      "lat": 50.7362106,
+      "lon": 4.2404673
+    },
+    {
+      "type": "node",
+      "id": 4212045122,
+      "lat": 50.7360092,
+      "lon": 4.240464
+    },
+    {
+      "type": "node",
+      "id": 4534630894,
+      "lat": 50.7366288,
+      "lon": 4.240186
+    }
+  ]
+}
